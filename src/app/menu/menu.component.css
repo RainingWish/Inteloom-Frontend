@@ -1,0 +1,24 @@
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1965964_1752ys7q6zxh.eot?t=1595633363679'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_1965964_1752ys7q6zxh.eot?t=1595633363679#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPQAAsAAAAAB/gAAAOEAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDYIMhATYCJAMMCwgABCAFhG0HNhvnBsgekiRIQMEeVUABAAUUD1/7sT/37T7BtKlFqth0EkMSTTSmWyiQLQUSKdA9NPjyfzr1y1Lek09huBKFAGRM+GQrJFe+FMhyANcCwRjAt7c8B6ZuwBNFpAGX4/9KfB5QTmMt3cumBZhgQGNvSqxAAvKGsZsIGuJyAq2GHcRslVY3Ay8D7QJxLts6gc/o5YbU0AhVxdAMcQcemmJK9xLALf9+fENi8KBQJgBdt89KeiD/jflYm7T/Gis1gns6K4xRJCwCmdirtO9iI/8iVqsn55pjK1kopnL9/w/n+8pqo3+8gqgAJLeDWTlQ8MZgGa6olQMKXP9QKnQD9wCeASj7VV+rapKTMzw5b0/MMXp41ZPi+WDm8spu77tLoXA2sPkhwNO7FN2l5V0+D1Yj2NkPMYzbDN5hQgZBlgKVt+Dug4w7xHBBEJrR9OPDiBVM0j7uxwhNPwRdK+tj0B4iJAozQS3n4GS3eL7ydWe1c4LQeu5RkM+FC+7zyFv0mXkQYrny3Oht9qHo2vLMqntleqkTadEUue/D210iuYSSbmo3k9AlIqaj92HMt2g388Ra5k2thcd4NU8D3cdujLs2S8cqtqYeblasbk7JqeqXm+PHY7BgaHdd9bVIVbO8/fK+fc3/upm3lm9ovb/iqPy3N9fa95X3Zrk2Ld1X210GAZZvnnHBQ4cavIf5Rb8FfviE/VD9273aY7/H+r1BA3VetVlScpPjhNWQk/yn5ngtLBZC53tcs02tDR0A/10Z0hUPLmeOLfqTv/ET9bvdJ/sXL3AArwW3H2Rud5Izau7TEfy3rAz8/5M5UwQMKbt8zA9DyRH0VvRaE8HfSodeG8OVA52TCY0BFYXaEJLGJJFpiyi1WUKlsYpWC8pGt+mjYkXWA/PGJIRuL1Do9IKk2ysi09ZRGvQJle5g0WonAqZsMx0yKlJJJyU9uOs4lruVQQmZKBKpjcQ21N+ppkWcLhLVKbtwQmx8PlRGBok6RQ/nEVsipRKWVGUAl0qrkf5+BTtUpZd001g7pY7MuDip6kGx3coAIJtURCeK6IF1OQ6TdVMMkmh5ChU+34iwGdKvk9pQ0OMUESonuXIsQaz4DkSZfLBTwa2c4nSETSKKkmASlWIAVipZiX7oV2CO6ka9iG5ULPsAr0OmOKWU1FUeu7xy4P0qvcQioE8KHcMyHOQLu+LwILYEAA==') format('woff2'),
+  url('//at.alicdn.com/t/font_1965964_1752ys7q6zxh.woff?t=1595633363679') format('woff'),
+  url('//at.alicdn.com/t/font_1965964_1752ys7q6zxh.ttf?t=1595633363679') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_1965964_1752ys7q6zxh.svg?t=1595633363679#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shop:before {
+  content: "\e601";
+}
+
+.icon-shop1:before {
+  content: "\e64e";
+}

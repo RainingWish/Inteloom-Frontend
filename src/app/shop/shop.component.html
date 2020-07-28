@@ -1,0 +1,75 @@
+<h1>ACME Inventory</h1>
+
+<!-- add card here and make the click burron modal -->
+<div class="row">
+  <div *ngFor="let item of items" class="col-sm-4 mb-4">
+    <div class="card text-center">
+      <img class="card-img-top" src="{{ item.imgAddr }}" alt="Card image" />
+      <div class="card-body">
+        <h5 class="card-title">{{ item.productName }}</h5>
+        <p class="text-right">$: {{ item.price }}</p>
+        <p class="text-right">Only: {{ item.stock }} Left</p>
+        <button
+          type="button"
+          class="col-5 btn btn-info mr-4"
+          data-toggle="modal"
+          [attr.data-target]="'#' + item.id"
+        >
+          More
+        </button>
+        <button
+          type="button"
+          [disabled]="item.disabled"
+          (click)="addItem(item.id)"
+          class="col-5 btn btn-success"
+        >
+          Add to Car
+        </button>
+      </div>
+      <!-- Modal -->
+      <div [attr.id]="item.id" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">{{ item.productName }}</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+            </div>
+            <div class="modal-body">
+              <img
+                class="img-thumbnail"
+                src="{{ item.imgAddr }}"
+                alt="Card image"
+              />
+              <p>{{ item.productDesc }}</p>
+              <br />
+              <h5>It only takes: ${{ item.price }}</h5>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                [disabled]="item.disabled"
+                class="btn btn-success"
+                (click)="addItem(item.id)"
+              >
+                Add to car
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<div style="height: 200px;" class="col-12 mb-10">
+  <div class = "text-right">
+  <a routerLink="/car">
+    <button type="button" class="btn btn-success btn-lg float-right">
+      Check out
+    </button>
+  </a>
+</div>
+</div>

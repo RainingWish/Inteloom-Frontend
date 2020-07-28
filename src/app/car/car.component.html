@@ -1,0 +1,79 @@
+<h1>ACME Inventory Shopping Car</h1>
+
+<div class="row">
+  <div *ngFor="let item of items" class="col-12 mb-4">
+    <div *ngIf="item.incar != 0" class="card">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 text-center">
+          <img
+            class="img-thumbnail"
+            src="{{ item.imgAddr }}"
+            alt="Card image"
+          />
+        </div>
+        <div class="col-lg-6 col-md-12 text-center">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.productName }}</h5>
+            <p>{{ item.productDesc }}</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-12">
+          <p class="text-center mt-4">Current: {{ item.incar }} in car</p>
+          <div class="text-center">
+            <button
+              type="button"
+              [disabled]="item.disabled"
+              class="btn btn-primary col-2 mr-1"
+              (click)="addItem(item.id)"
+            >
+              +
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger col-2 ml-1"
+              (click)="removeItem(item.id)"
+            >
+              -
+            </button>
+          </div>
+          <div class="text-center mt-2">
+            <h5>This item will cost: ${{ item.total }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 text-right mb-4">
+    <h4>All items will cost: ${{ Total }}</h4>
+  </div>
+  <div style="height: 200px;" class="col-12 mb-10 row">
+    <div class="col-12 col-md-12">
+      <div class="container-fluid">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <label>Email</label>
+            <input
+              type="text"
+              formControlName="email"
+              class="form-control"
+              [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+              id = "emailAddr"
+              [(ngModel)]="emailAddr"
+            />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">Email is required</div>
+              <div *ngIf="f.email.errors.email">
+                Email must be a valid email address
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="text-center">
+              <button class="btn btn-success btn-lg" (click)="submit()">Check out</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
