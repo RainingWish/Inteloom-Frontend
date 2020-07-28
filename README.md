@@ -28,4 +28,4 @@ Webpage css and formating using Bootstrap to help<br />
 ## All cost and left stock data present on frontend are updating dynamically<br />
 
 # Youtube Demo vidio is Here:
-
+https://youtu.be/5fuyp9bYisM
